@@ -3,7 +3,7 @@ var itemDetailsContainer = document.querySelector('.item-details');
 
 listButton.addEventListener('click', async () => {
     try {
-        const response = await fetch('http://127.0.0.1:5000/lists');
+        const response = await fetch('/lists');
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
