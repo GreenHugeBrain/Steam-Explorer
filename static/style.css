@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'TBC'; /* Name your font family */
+    src: url('TBCContractica-Bold.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+body {
+    background-color: #1e2124;
+    color: #fff;
+    font-family: TBC;
+    display: grid;
+    justify-items: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #1e2124;
+}
+
+.item-details {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #36393f;
+    font-weight: bold;
+    color: #72767d;
+    
+}
+
+.header div {
+    flex: 1;
+    text-align: left;
+}
+
+.container{
+    display: grid;
+    justify-items: center;
+}
+
+
+.item {
+    display: flex;
+    justify-items: baseline;
+    align-items: center;
+    padding: 10px 0;
+    width: 85vw;
+    font-size: 12px;
+    border-bottom: 1px solid #36393f;
+}
+
+.item > div {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.item img {
+    width: 60px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.item .name {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+}
+
+.item .price {
+    color: #43b581;
+    font-weight: bold;
+}
+
+.item .date {
+    color: #72767d;
+}
+
+.item .user {
+    display: flex;
+    align-items: center;
+}
+
+.item .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.item .level {
+    background-color: #36393f;
+    color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item .badge {
+    background-color: #36393f;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.item .listing {
+    background-color: #36393f;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.list {
+    background-color: #43b581;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.list:hover {
+    background-color: #3ca374;
+}
+
+.linkusername{
+    color: white;
+    text-decoration: none;
+}
+
+
+.listing-active {
+    color: #43b581; /* მწვანე ფერი გაყიდვაშია სტატუსისთვის */
+}
+
+.listing-inactive {
+    color: #f04747; /* წითელი ფერი მოხსნილი სტატუსისთვის */
+}
